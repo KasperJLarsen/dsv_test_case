@@ -1,0 +1,67 @@
+[tool.black]
+line-length = 100
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+known_first_party = [
+    "ocr_output",
+]
+
+[project]
+name = "ocr_output"
+version = "0.0.1"
+requires-python = ">= 3.10"
+description = ""
+readme = "README.md"
+license = "MIT"
+urls.repository = "https://github.com/microsoft/mattergen"
+classifiers = [
+  "Topic :: Natural Language Processing",
+]
+
+dependencies = [
+"instructor",
+"lightgbm",
+"matplotlib",
+"numpy",
+"optuna",
+"pandas",
+"pyarrow>=15.0.0",
+"pydantic",
+"scikit-learn",
+"scipy",
+"seaborn",
+"sentence_transformers",
+"torch"
+]
+
+[tool.uv.sources]
+# uv targets this specific binary whenever 'vllm' is processed on your machine
+vllm = { url = "https://github.com" }
+
+
+
+[tool.setuptools.package-data]
+"*" = ["**.yaml", "**.csv", "**.pt", "**.json"]
+
+[tool.uv]
+
+
+[build-system]
+requires = ["setuptools <81"]
+build-backend = "setuptools.build_meta"
