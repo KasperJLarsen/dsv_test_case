@@ -1,0 +1,13 @@
+instructor
+lightgbm
+matplotlib
+numpy
+optuna
+pandas
+pyarrow>=15.0.0
+pydantic
+scikit-learn
+scipy
+seaborn
+sentence_transformers
+torch

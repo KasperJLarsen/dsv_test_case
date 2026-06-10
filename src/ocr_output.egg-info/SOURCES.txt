@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/alternative_model.py
+src/data_extraction.py
+src/feature_engineering.py
+src/model.py
+src/ocr_output.egg-info/PKG-INFO
+src/ocr_output.egg-info/SOURCES.txt
+src/ocr_output.egg-info/dependency_links.txt
+src/ocr_output.egg-info/requires.txt
+src/ocr_output.egg-info/top_level.txt

@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: ocr_output
+Version: 0.0.1
+License-Expression: MIT
+Project-URL: repository, https://github.com/microsoft/mattergen
+Classifier: Topic :: Natural Language Processing
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: instructor
+Requires-Dist: lightgbm
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: optuna
+Requires-Dist: pandas
+Requires-Dist: pyarrow>=15.0.0
+Requires-Dist: pydantic
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: sentence_transformers
+Requires-Dist: torch
+
+# dsv
